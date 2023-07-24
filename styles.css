@@ -1,0 +1,95 @@
+body {
+    font-family: Helvetica, sans-serif;
+    background-image: url('background-image.jpg'); /* Replace 'background-image.jpg' with your image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top ;
+    background-color: rgba(255, 255, 255, 0.8); /* Fallback for browsers that don't support backdrop-filter */
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.096); /* Adjust the alpha value to control the transparency */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    backdrop-filter: blur(10px); /* Frosted glass effect for modern browsers */
+
+  }
+  
+
+
+  a:link {
+    color: #9b9b9b;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: #9b9b9b;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: #9b9b9b;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+
+
+
+  h1 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0c1115;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #b4b7bc;
+  }
+  
+
+  
+  .menu-button:hover {
+    background-color: #444;
+  }
+  
+  /* Hide the default audio controls for all modern browsers */
+  audio {
+    display: none;
+  }
+  
+  /* Styles for the volume sliders */
+  .volume-slider-container {
+    display: none;
+    position: sticky;
+    top: 10px;
+    padding: 20px;
+  }
+  
+  /* Styles for the volume sliders */
+  .volume-slider {
+    width: 60%;
+    margin: 5px 0;
+  }
+  

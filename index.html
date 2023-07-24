@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LofiChatter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 style="color:#0c1115">Lofi x Air Traffic Control</h1>
+    <audio id="lofiAudio" controls loop>
+        <source src="20210610_Ambulo x Squeeda – Noctilucent.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="atcAudio" controls loop>
+      <source src="https://s1-bos.liveatc.net/kord7" type="audio/mpeg">
+    </audio>
+    <div class="menu">
+      <button id="playButton">></button>
+      <button id="menuButton">vol.</button>
+      <button id="nextButton">>></button>
+      <div id="volumeSliderContainer" class="volume-slider-container">
+        <input type="range" id="lofiVolumeSlider" class="volume-slider" min="0" max="1" step="0.01">
+        <input type="range" id="atcVolumeSlider" class="volume-slider" min="0" max="1" step="0.01">
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+<style>
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      color: rgb(155, 155, 155);
+      text-align: center;
+    }
+    </style>
+    
+    <div class="footer">
+      <p> Made by <a href="https://github.com/LeafandJam">Leaf</a>. Inspired by <a href="https://www.lofiatc.com">lofiatc</a>. </p>
+    </div> 
+</html>
